@@ -5,4 +5,5 @@
   object-fit: cover;
   aspect-ratio: auto;
   padding: 3px;
+  opacity: 0.5;
 }

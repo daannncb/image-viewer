@@ -1,6 +1,6 @@
 import "./styling/ThumbnailImages.css";
 
-export default function ThumbnailImages({ url, alt, onClick }) {
+export default function ThumbnailImages({ url, alt, onClick, onKeyDown }) {
   return (
     <>
       <img
@@ -9,6 +9,9 @@ export default function ThumbnailImages({ url, alt, onClick }) {
         className="thumbnail-images"
         onClick={onClick}
         style={{ cursor: "pointer" }}
+        tabIndex="0"
+        onKeyDown={onKeyDown}
+        role="button"
       />
     </>
   );

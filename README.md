@@ -29,3 +29,29 @@ Requirements
 🎯 Implement functionality to display a larger version of an image when its thumbnail is clicked.
 🎯 Ensure all images have meaningful alt text.
 🎯 Ensure basic keyboard navigation for image selection (e.g., thumbnails should be focusable and activatable with Enter/Space).
+
+#### Difficulties
+
+There were a couple of major blockages; it took a long time to figure out that I needed to return imageData as an object from my API fetch to properly destructure this in my thumbnail container. This is yet another struggle with data shapes(?).
+
+Manny offered some guidance on getting my thumbnails to be focusable with tab, and with some troubleshooting, I managed to get it to work only on enter or space key presses. Originally I just replicated the onClick with onKeyDown, but this worked for any key press, so I fixed that.
+
+I think the largest struggle was understanding how data is transformed across states and components. I can read my code and understand what is happening, but if I had to write this again, I'd still be googling much of this, and I'd put money on me getting stuck for 30 minutes on
+`const { imageData } = useAPIFetch();`
+as initially, I had written
+`const imageData = useAPIFetch();`
+and employed surprised Pikachu when my `{imageData.map}` didn't work. I fixed this with some console logging and saw that the returned imageData was giving me unnamed rows.
+
+References:
+
+###### onKeyDown
+
+https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-javascript-part2/
+
+There's a block of plain JS in here that cleared up how to get the key press to work; simply "event.key" tracks the name of the key pressed, and after using onClick as a prop, translating eventListener into React was much simpler.
+
+https://www.w3schools.com/js/js_objects.asp
+
+Hopefully this misunderstanding of objects is now cleared up. Should have been sorted a while ago, but better late than never.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling
