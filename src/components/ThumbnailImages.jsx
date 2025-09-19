@@ -1,13 +1,14 @@
-import "./ThumbnailImages.css";
+import "./styling/ThumbnailImages.css";
 
-export default function ThumbnailImages({ url, alt, thumbClick }) {
+export default function ThumbnailImages({ url, alt, onClick }) {
   return (
     <>
       <img
         src={url}
         alt={alt}
         className="thumbnail-images"
-        onClick={thumbClick}
+        onClick={onClick}
+        style={{ cursor: "pointer" }}
       />
     </>
   );

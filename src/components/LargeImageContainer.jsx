@@ -1,17 +1,13 @@
-import useAPIFetch from "../lib/useAPIFetch";
 import LargeImages from "./LargeImages";
 
-export default function LargeImage() {
-  const { imageData } = useAPIFetch();
+export default function LargeImage({ selectedImg }) {
   return (
-    <>
-      <section className="thumbnail-container">
-        {imageData.map((item) => {
-          return <LargeImages key={item.id} url={item.url} alt={item.alt} />;
-        })}
-      </section>
-    </>
+    <div className="large-image-container">
+      {selectedImg ? (
+        <LargeImages selectedImg={selectedImg} />
+      ) : (
+        <div>Select an Image {selectedImg}</div>
+      )}
+    </div>
   );
 }
-
-//this function needs to "listen" to a state which gets a value from the thumbnail images, which provides the index of that image, and renders it as a background image

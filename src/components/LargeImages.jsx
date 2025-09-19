@@ -1,3 +1,5 @@
-export default function LargeImages() {
-  return <main className="screen-fill-image"></main>;
+export default function LargeImages({ selectedImg }) {
+  return (
+    <img src={selectedImg.url} alt={selectedImg.alt} className="large-image" />
+  );
 }
