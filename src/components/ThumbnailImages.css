@@ -1,0 +1,8 @@
+.thumbnail-images {
+  /* image-resolution: 16/9; */
+  height: 9vh;
+  min-width: 16vh;
+  object-fit: cover;
+  aspect-ratio: auto;
+  padding: 3px;
+}

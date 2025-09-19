@@ -1,8 +1,14 @@
-export default function ThumbnailImages({ url, alt }) {
+import "./ThumbnailImages.css";
+
+export default function ThumbnailImages({ url, alt, thumbClick }) {
   return (
-    <section className="thumbnail-images">
-      <img src={url} alt={alt} />
-      <h1>test</h1>
-    </section>
+    <>
+      <img
+        src={url}
+        alt={alt}
+        className="thumbnail-images"
+        onClick={thumbClick}
+      />
+    </>
   );
 }

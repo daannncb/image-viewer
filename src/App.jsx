@@ -1,16 +1,10 @@
 import "./App.css";
-import APIFetch from "./components/APIFetch";
-import ThumbnailImages from "./components/ThumbnailImages";
-import ThumbnailContainer from "./components/ThumbnailContainer";
+import Gallery from "./components/Gallery";
 
 export default function App() {
   return (
     <>
-      <h1>Gallery</h1>
-      <>
-        {/* <APIFetch /> */}
-        <ThumbnailContainer />
-      </>
+      <Gallery />;
     </>
   );
 }
