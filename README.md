@@ -6,12 +6,6 @@
 🎯 Were there any requirements or goals that you were unable to achieve?
 🎯 If so, what was it that you found difficult about these tasks?
 Optional
-🏹 Feel free to add any other reflections you would like to share about your submission, for example:
-
-Requesting feedback about a specific part of your submission.
-What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
-What errors or bugs did you encounter while completing your assignment? How did you solve them?
-What went really well and what could have gone better?
 
 User Stories
 🐿️ As a developer, I want the application to use the useState hook so that user interactions (like selecting an image) are smooth and the gallery’s state is managed effectively.
@@ -42,9 +36,16 @@ as initially, I had written
 `const imageData = useAPIFetch();`
 and employed surprised Pikachu when my `{imageData.map}` didn't work. I fixed this with some console logging and saw that the returned imageData was giving me unnamed rows.
 
-References:
+#### Reflecting on the experience
 
-###### onKeyDown
+This is the first time I've not felt absurdly time crunched finishing a project. After the Friday session, I was 95% there and just polished things off on Sunday afternoon.
+
+I had planned to work on the unsplash API and got as far as getting access keys, and I split my work onto another branch to not muddy the waters of a working site too much.
+I think it would have been a really good challenge to get the unsplash API working, and had I sat down and started on Saturday, rather than Sunday afternoon, I think I'd have nailed it. But I wanted to relax a bit, so I did.
+
+I think I've hit the requirements very well, and dabbled into the stretch goals; I did have a search bar component and included the react documentation in the references, but setting up another useState and subsequent troubleshooting didn't feel like a Sunday activity.
+
+References:
 
 https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-javascript-part2/
 
