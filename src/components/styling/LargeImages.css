@@ -1,6 +1,17 @@
 .large-image {
-  object-fit: contain;
+  object-fit: fill;
   height: 100vh;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .large-image {
+    object-fit: contain;
+    width: 100%;
+    opacity: 1;
+    top: auto;
+    bottom: 20px;
+    aspect-ratio: auto;
+  }
 }

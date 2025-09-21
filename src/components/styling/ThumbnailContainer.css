@@ -23,9 +23,10 @@
   background: #ffffff;
 }
 
-/* @media make max-width bigger */
 @media (max-width: 600px) {
   .thumbnail-container {
+    width: 90%;
+    opacity: 1;
     top: auto;
     bottom: 20px;
   }
