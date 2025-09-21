@@ -55,3 +55,7 @@ https://www.w3schools.com/js/js_objects.asp
 Hopefully this misunderstanding of objects is now cleared up. Should have been sorted a while ago, but better late than never.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling
+
+https://react.dev/reference/react-dom/components/form
+
+https://unsplash.com/documentation#creating-a-developer-account
